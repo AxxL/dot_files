@@ -1,0 +1,25 @@
+/* Gitlab CSS */
+
+/* Makes all notes and system-notes a bit smaller and darker, so that the */
+/* comments are visible seems to be emphasized. */
+
+ul.notes .note {
+    border-bottom: 1px solid #c5b5b5
+}
+
+ul.notes .system-note {
+    font-size: 12px;
+    background: #f0f0f0;
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul.notes .system-note .timeline-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ul.notes .timeline-icon svg {
+    top: 0px;
+    left: 8px;
+}
