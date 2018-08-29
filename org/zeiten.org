@@ -1,0 +1,17 @@
+* Allgemein
+** Allgemein, Mails, Besprechungen, etc.
+   :LOGBOOK:
+   :END:
+
+* Projekte
+** Projekt A
+*** Anfrage Mapserver
+    :LOGBOOK:
+    :END:
+
+* Zusammenfassung
+** <2018-07-30 Mo>
+    #+BEGIN: clocktable :maxlevel 10 :scope file :block 2018-07-30
+    #+CAPTION: Clock summary 
+    #+END:
+
