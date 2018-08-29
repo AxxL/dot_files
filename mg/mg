@@ -1,0 +1,4 @@
+make-backup-files nil
+;; backup-to-home-directory
+back-to-indentation
+visible-bell
