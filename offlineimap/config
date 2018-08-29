@@ -1,0 +1,68 @@
+[general]
+accounts = aschaefer
+
+[Account aschaefer]
+localrepository = aschaeferLocal
+remoterepository = aschaeferRemote
+
+[Repository aschaeferLocal]
+
+# Each repository requires a "type" declaration. The types supported for
+# local repositories are Maildir, GmailMaildir and IMAP.
+#
+type = Maildir
+
+
+# This option stands in the [Repository LocalExample] section.
+#
+# Specify local repository.  Your IMAP folders will be synchronized
+# to maildirs created under this path.  OfflineIMAP will create the
+# maildirs for you as needed.
+#
+localfolders = ~/Dokumente/imapmail
+
+[Repository aschaeferRemote]
+
+# The remote repository.  We only support IMAP or Gmail here.
+#
+type = IMAP
+
+#
+# Specify the remote hostname.
+#
+remotehost = imap.domain.loc
+
+#
+# Whether or not to use SSL.
+#
+# Note: be care to configure the 'remotehost' line with the domain name defined
+# in the certificate. E.g., if you trust your provider and want to use the
+# certificate it provides on a shared server. Otherwise, OfflineIMAP will stop
+# and say that the domain is not named in the certificate.
+#
+ssl = no
+
+#
+# Specify the port.  If not specified, use a default port.
+#
+remoteport = 143
+
+#
+# Specify the remote user name.
+#
+remoteuser = axel.schaefer@domain.loc
+remotepass = secret
+
+
+#
+# Specify which authentication/authorization mechanisms we should try and the
+# order in which OfflineIMAP will try them.
+#
+# NOTE: any given mechanism will be tried ONLY if it is supported by the remote
+# IMAP server.
+#
+# Default value is ranged is from strongest to more weak ones. Due to technical
+# limitations, if GSSAPI is set, it will be tried first, no matter where it was
+# specified in the list.
+#
+auth_mechanisms = LOGIN
