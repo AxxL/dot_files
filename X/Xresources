@@ -1,0 +1,122 @@
+! font quality https://www.reddit.com/r/i3wm/comments/41mvug/how_to_improve_font_rendering_in_i3/
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! Cursor Theme
+Xcursor.theme: Numix
+
+! xterm -fa 'Ubuntu Mono ' -fs 10
+! xterm*metaSendsEscape: true
+! XTerm*faceName: Ubuntu Mono
+XTerm*faceName: Terminus
+XTerm*faceSize: 12
+XTerm*metaSendsEscape: true
+! XTerm*ReverseVideo: true
+XTerm*termName: xterm-256color
+XTerm*locale: true
+XTerm*saveLines: 4096
+
+! Triple Click anbd word boundaries: The following setting changes what
+! xterm considers as characters:
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Good complementary configuration is to select links with triple click:
+XTerm*on3Clicks: regex [[:alpha:]]+://([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+
+! I usually leave out the protocol part as optional, therefore both
+! filesystem paths and URL links do work.
+! XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+])
+
+! open URL:
+! hover above a link;
+! triple click it to select it (see above)
+! Alt + click it to open it
+*VT100*translations: #override Shift <Btn1Up>: exec-formatted("vivaldi '%t'", PRIMARY)
+
+! scrolling behaviour
+! XTerm*jumpScroll: false
+! XTerm*multiScroll: true
+! XTerm*fastScroll: true
+
+! scroll inside an alternate screen
+! XTerm*alternateScroll: true
+
+! adjust line spacing:
+! XTerm*scaleHeight: 1.01
+
+! nice colors
+! *background: rgb:00/00/00
+! *foreground: rgb:ff/ff/ff
+! *color0:     rgb:00/00/00
+! *color1:     rgb:d3/62/65
+! *color2:     rgb:ae/ce/91
+! *color3:     rgb:e7/e1/8c
+! *color4:     rgb:7a/7a/b0
+! *color5:     rgb:96/3c/59
+! *color6:     rgb:41/81/79
+! *color7:     rgb:be/be/be
+! *color8:     rgb:66/66/66
+! *color9:     rgb:ef/81/71
+! *color10:    rgb:e5/f7/79
+! *color11:    rgb:ff/f7/96
+! *color12:    rgb:41/86/be
+! *color13:    rgb:ef/9e/be
+! *color14:    rgb:71/be/be
+! *color15:    rgb:ff/ff/ff
+
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-ubuntu-bold-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-ubuntu-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-ubuntu-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-ubuntu-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-ubuntu-bold-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-ubuntu-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-ubuntu-bold-r-*-*-10-*-*-*-*-*-*-*
+
+! general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #ffffff
+xscreensaver.Dialog.background:         #000000
+xscreensaver.Dialog.topShadowColor:     #000000
+xscreensaver.Dialog.bottomShadowColor:  #000000
+xscreensaver.Dialog.Button.foreground:  #666666
+xscreensaver.Dialog.Button.background:  #ffffff
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #666666
+xscreensaver.Dialog.text.background:    #ffffff
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #666666
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       8
+
+!Urxvt
+URxvt.saveLines: 1000
+URxvt.scrollBar: false
+URxvt.foreground: white
+URxvt.background: black
+URxvt.secondaryScroll: true
+URxvt.font: xft:terminus:pixelsize=13
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.tabbed.saveLines: 1000
+URxvt.tabbed.scrollBar: false
+URxvt.tabbed.tabbar-fg: 3
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 0
+URxvt.tabbed.tab-bg: 1
+URxvt.tabbed.secondaryScroll: true
+URxvt.tabbed.font: xft:Bitstream Vera Sans Mono:pixelsize=12
+URxvt*inheritPixmap: true 
+URxvt*shading: 70
