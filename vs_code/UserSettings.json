@@ -1,0 +1,23 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.statusBar.feedback.visible": false,
+    "cSpell.language": "en,de-DE",
+    "workbench.colorTheme": "Atom One Light",
+    "update.enableWindowsBackgroundUpdates": false,
+    // Steuert die Schriftfamilie.
+    "editor.fontFamily": "'Menlo', 'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "cSpell.userWords": [
+        "cachen",
+        "epsg",
+        "lden",
+        "mapbender",
+        "mapproxy",
+        "wmts"
+    ],
+    "git.confirmSync": false,
+}
